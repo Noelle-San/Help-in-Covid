@@ -16,6 +16,7 @@
     border-bottom: 1px solid white;
 }
 
+
 #An {
 
     font-size: 4rem;
@@ -228,32 +229,33 @@
 
 
 .navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  padding: 30px 0;
-  font-family: 'Ubuntu', sans-serif;
-  transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
 
 }
 
 .navbar.sticky {
-  padding: 15px 0;
-  background: #53B8BB;
+    padding: 15px 0;
+    background: #53B8BB;
 }
 
 .navbar .max-width {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .logo:hover {
-  background-image: linear-gradient(brown, purple);
+    background-image: linear-gradient(brown, purple);
 }
 
 
 
 .navbar .logo a span {
-  color: yellowgreen;
-  transition: all 0.3s ease;
+    color: yellowgreen;
+    transition: all 0.3s ease;
 }
