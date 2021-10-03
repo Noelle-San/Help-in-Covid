@@ -17,9 +17,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
+
 
     <script src="https://kit.fontawesome.com/fec895396d.js" crossorigin="anonymous"></script>
 
@@ -42,12 +40,11 @@
     <section id="title">
         <div class="container-fluid">
 
-          <nav class="navbar navbar-expand-lg navbar-light " style="padding-bottom: 30px;" >
+            <nav class="navbar navbar-expand-lg navbar-light ">
 
                 <!-- navbar brand -->
-                <div class="logo">
-                <a href="#" class="navbar-brand" style="font-family: 'Acme', sans-serif; color: black;font-size: 55px;font-weight: 600;">Co-<span>Winn</span></a>
-                </div>
+                <a href="#" class="navbar-brand" style="font-size:20px;"> Co-Winn</a>
+
 
                 <!-- hamburger menu -->
                 <button class="navbar-toggler me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggle"
@@ -55,19 +52,22 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- navbar -->
+                <!-- navbar er baaki shob jinish -->
                 <div class="collapse navbar-collapse" id="navtoggle">
                     <ul class="navbar-nav ms-auto">
-
-                        <li class=nav-item id="lg">
-                            <a class="nav-link" href="#" style="font-family: 'Acme', sans-serif;color: blueviolet;font-size: 25px;font-weight: 600;"> Home</a>
+                        <li class=nav-item>
+                            <a class="nav-link" href="index.html"> Home</a>
                         </li>
 
                         <li class=nav-item id="lg">
-                            <a class="nav-link" href="#" style="font-family: 'Acme', sans-serif;color: blueviolet;font-size: 25px;font-weight: 600;"> Login </a>
+                            <a class="nav-link" href="#"> Login </a>
+                        </li>
+
+                        <li class=nav-item id="lg">
+                            <a class="nav-link" href="./Pages/About.html"> About </a>
                         </li>
                     </ul>
-
+                </div>
                 <!-- end of navbar -->
             </nav>
 
@@ -184,39 +184,34 @@
         </div>
         <!--end of container fluid-->
     </section>
+
+
     <!---Footer-->
-    <footer>
-        <div class="footer-content">
-            <h3>Co-Winn</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <ul class="socials">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <p class="company-name">
+                ABC &copy; 2021, ALL Rights Reserved
+            </p>
         </div>
-           <div class="footer-content">
-            <ul class="socials">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div> 
-        <div class="footer-bottom">
-            <p>copyright &copy;2021 Co-winn.</p>
     </footer>
+
+
+
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
     <script src="style.js"></script>
-   
+
 </body>
 
 </html>
