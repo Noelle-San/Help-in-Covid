@@ -1,3 +1,8 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
 #title {
     background-color: #819dff;
     padding-left: 50px;
@@ -219,4 +224,36 @@
     font-size: 20px;
     color: black;
     padding-right: 20px;
+}
+
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+  
+}
+
+.navbar.sticky {
+  padding: 15px 0;
+  background: #53B8BB;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo:hover {
+  background-image: linear-gradient(brown, purple);
+}
+
+
+
+.navbar .logo a span {
+  color: yellowgreen;
+  transition: all 0.3s ease;
 }
