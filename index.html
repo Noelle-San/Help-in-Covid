@@ -120,13 +120,13 @@
                     <label for="inputemail" class="form-label" id="email-label"
                         style="font-size: 1.1rem; font-family: sans-serif; font-weight: 500;"><strong>Email
                             address</strong></label>
-                    <input type="email" class="form-control" id="inputemail" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="inputemail" aria-describedby="emailHelp" pattern="[^ @]*@[^ @]*" placeholder="Enter your email">
                 </div>
 
                 <div class="mb-3" id="pass-div">
                     <label for="InputPassword" class="form-label" id="pass-label"
                         style="font-size: 1.1rem; font-family: sans-serif;"><strong>Password</strong></label>
-                    <input type="password" class="form-control" id="InputPassword">
+                    <input type="password" class="form-control" id="InputPassword" placeholder="Enter your password">
                 </div>
 
                 <div class="mb-3 form-check" id="rem-div">
@@ -135,7 +135,7 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 </div>
 
-                <button type="submit" class="btn" id="sbmtbtn"><strong
+                <button type="submit" class="btn" id="sbmtbtn" style=background: cyan;""><strong
                         style="position: relative; bottom: 5px;">Submit</strong>
                 </button>
 
