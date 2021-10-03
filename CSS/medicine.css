@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+}
+p{
+    font-size: 1.2rem;
+}
+
+.logo{
+    padding: 1rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+}
+.main-page{
+    background-color: #22a6b3;
+    min-height: 90.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dff9fb;
+}
+
+.main-page h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.main-page span{
+    position: absolute;
+    bottom: 10rem;
+    font-size: 3rem;
+    animation: arrowDown 2s infinite;
+}
+.content-page{
+    margin-top: 5rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: #2d3436;
+}
+.content-page h1{
+    font-size: 2.5rem;
+}
+
+.content-page h3{
+    color: #636e72;
+    font-size: 2rem;
+}
+.content-page p{
+    color: #2d3436;
+    line-height: 25px;
+}
+.medicine_1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.medicine_2_content p{
+    margin-top: 2rem;
+    text-align: justify;
+}
+.medicine_3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.medicine_5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.medicine_5_content{
+    padding-left: 2rem;
+    text-align: justify;
+}
+.medicine_4_content, .medicine_6_content{
+    margin-top: 2rem;
+}
+
+
+@keyframes arrowDown {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(30px);
+        opacity: 1;
+    }
+}
+
+@media (min-width:1300px){
+    .main-page h1{
+        font-size: 4vw;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width:850px){
+    .medicine_1, .medicine_3, .medicine_5{
+        display: block;
+    }
+    .medicine_5_content{
+        padding-left: 0;
+    }
+    .medicine_1_content, .medicine_3_content{
+        margin-bottom: 2rem;
+    }
+}
