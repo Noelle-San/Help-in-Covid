@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 #title{
     
     
@@ -11,6 +15,7 @@
   background-size: cover;
   background-position: center;
     height: 750px;
+    width: 98.9vw;
     background-attachment: fixed;
 }
 
@@ -52,7 +57,7 @@
     }
 
     to {
-        left: 150px;
+        left: 90px;
     }
 }
 
@@ -131,4 +136,32 @@
 #homebtn:hover {
     box-shadow: inset 150px 0 0 0 rgb(196, 101, 101);
     color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    #yogatxt_div
+    {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+#yoga_txt{
+    font-size: 20px;
+}
+#cobra{
+    width: 90%;
+}
+@keyframes an {
+    from {
+        left: -30px;
+    }
+
+    to {
+        left: 10px;
+    }
+}
+
 }
