@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #819dff;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 80px 0 0px 200px;
+    text-align: start;
+    color: rgb(51, 51, 51);
+    background-color: #819dff;
+}
+
+.header h1 {
+    font-size: 3em;
+    letter-spacing: .3vw;
+}
+
+.header strong {
+    color: #ec1e1e;
+}
+
+.header img {
+    width: 30em;
+}
+
+/* Tracker */
+
+.tracker {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 5em;
+    text-align: center;
+    align-items: center;
+    letter-spacing: .3vw;
+    padding-bottom: 15rem;
+    background-color: rgb(255, 220, 154);
+}
+
+#title-country {
+    font-size: 5vw;
+    text-align: center;
+    color: rgb(47, 47, 47);
+    position: relative;
+    text-transform: uppercase;
+    background-color: rgba(58, 220, 248, 0.459);
+}
+
+.tracker ul {
+    display: grid;
+    height: 20vh;
+    grid-template-columns: auto auto auto auto;
+}
+
+#div-total-cases,
+#div-live-cases {
+    width: 60vw;
+    position: relative;
+    left: 20%;
+    background-color: rgb(58, 57, 57);
+    border-radius: 10px;
+}
+
+#div-total-cases h1,
+#div-live-cases h1{
+    padding: 1em;
+    background-color: rgb(105, 105, 105);
+    border-radius: 15px;
+    color: rgb(255, 187, 0);
+}
+
+.tracker li {
+    color: rgb(218, 218, 218);
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.tracker p {
+    font-family: 'Poppins';
+    font-size: 2vw;
+}
