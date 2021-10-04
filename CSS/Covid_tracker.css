@@ -88,7 +88,7 @@ nav {
 #div-live-cases h1{
     font-size: 5vw;
     border-radius: 15px;
-    color: rgb(17, 226, 115);
+    color: rgb(197, 17, 17);
 }
 
 .tracker li {
@@ -126,7 +126,7 @@ nav {
     }
 }
 
-@media (max-width: 485px) {
+@media (max-width: 486px) {
 
     #title-country {
         font-size: 10vw;
@@ -156,6 +156,6 @@ nav {
     #div-live-cases h1{
         font-size: 10vw;
         border-radius: 15px;
-        color: rgb(17, 226, 115);
+        color: rgb(197, 17, 17);
     }
 }
