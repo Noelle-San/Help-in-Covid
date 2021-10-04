@@ -43,55 +43,119 @@ nav {
 /* Tracker */
 
 .tracker {
-    display: grid;
-    grid-template-columns: auto;
     row-gap: 5em;
     text-align: center;
     align-items: center;
     letter-spacing: .3vw;
     padding-bottom: 15rem;
-    background-color: rgb(255, 220, 154);
 }
 
 #title-country {
     font-size: 5vw;
+    font-weight: bold;
     text-align: center;
-    color: rgb(47, 47, 47);
     position: relative;
     text-transform: uppercase;
-    background-color: rgba(58, 220, 248, 0.459);
 }
 
 .tracker ul {
     display: grid;
-    height: 20vh;
     grid-template-columns: auto auto auto auto;
+    column-gap: 5vw;
+    height: 20vh;
+    width: fit-content;
 }
 
 #div-total-cases,
 #div-live-cases {
-    width: 60vw;
+    margin-top: 10vh;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+#div-total-cases ul {
+    margin-top: 10vh;
     position: relative;
     left: 20%;
-    background-color: rgb(58, 57, 57);
-    border-radius: 10px;
+}
+#div-live-cases ul {
+    margin-top: 10vh;
+    position: relative;
+    left: 25%;
 }
 
 #div-total-cases h1,
 #div-live-cases h1{
-    padding: 1em;
-    background-color: rgb(105, 105, 105);
+    font-size: 5vw;
     border-radius: 15px;
-    color: rgb(255, 187, 0);
+    color: rgb(17, 226, 115);
 }
 
 .tracker li {
-    color: rgb(218, 218, 218);
     display: grid;
     grid-template-rows: auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: fit-content;
 }
 
-.tracker p {
+.tracker li h2,
+.tracker li p {
     font-family: 'Poppins';
     font-size: 2vw;
+}
+
+@media (max-width: 924px) {
+
+    .header {
+        text-align: center;
+        padding: 0 0 80px 0;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .header h1 {
+        letter-spacing: none;
+    }
+
+    .tracker li {
+        display: unset;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 485px) {
+
+    #title-country {
+        font-size: 10vw;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .tracker ul {
+        display: unset;
+    }
+
+    #div-total-cases ul,
+    #div-live-cases ul {
+        margin-top: 0;
+        left: 0;
+    }
+
+    .tracker li h2,
+    .tracker li p {
+        font-family: 'Poppins';
+        font-size: 5vw;
+    }
+
+    #div-total-cases h1,
+    #div-live-cases h1{
+        font-size: 10vw;
+        border-radius: 15px;
+        color: rgb(17, 226, 115);
+    }
 }
