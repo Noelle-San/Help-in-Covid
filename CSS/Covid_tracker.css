@@ -36,6 +36,11 @@ nav {
     color: #ec1e1e;
 }
 
+.header strong:hover {
+    color: blue;
+}
+
+
 .header img {
     width: 30em;
 }

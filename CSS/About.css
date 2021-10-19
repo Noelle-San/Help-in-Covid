@@ -31,7 +31,16 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.7rem;
     font-weight: 600;
+    color: red;
 }
+
+h3:hover {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: blue;
+}
+
 
 p {
     font-family: 'Nunito', sans-serif;
