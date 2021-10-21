@@ -1,134 +1,138 @@
-#title{
-    
-    
+#title {
+  background-color: #819dff;
+  padding-left: 50px;
 }
 
-#yoga{
-    background-image: url(woman-doing-yoga-against-setting-sun_305638-65.jpg);
-    background-repeat: no-repeat;
-    filter: blur(2px);
+.navbar-brand {
+  font-family: "Acme", sans-serif;
+}
+
+.nav-item:hover {
+  border-bottom: 1px solid white;
+}
+
+#yoga {
+  background-image: url(woman-doing-yoga-against-setting-sun_305638-65.jpg);
+  background-repeat: no-repeat;
+  filter: blur(2px);
   -webkit-filter: blur(2px);
   background-size: cover;
   background-position: center;
-    height: 750px;
-    background-attachment: fixed;
+  height: 750px;
+  background-attachment: fixed;
 }
 
-#yogatxt_div{
-    text-align: center;
-    position: absolute;
-    bottom: 85px;
-    left: 150px;
-    animation: an;
-    animation-fill-mode: forwards;
-    animation-duration: 2.5s;
+#yogatxt_div {
+  text-align: center;
+  position: absolute;
+  bottom: 85px;
+  left: 150px;
+  animation: an;
+  animation-fill-mode: forwards;
+  animation-duration: 2.5s;
 }
-#yoga_txt{
-    
-    font-family: 'Bree Serif', serif;
-    font-size: 50px;
-    color: white;
-    font-weight: 200;
+#yoga_txt {
+  font-family: "Bree Serif", serif;
+  font-size: 50px;
+  color: white;
+  font-weight: 200;
 }
 
 #scrolldown {
-    font-family: 'Fredoka One', cursive;
-    width: 150px;
-    height: 40px;
-    background-color: rgb(166, 187, 117);
-    border: none;
-    border-radius: 12px;
-    outline: none;
-    margin-top: 40px;
-    box-shadow: inset 0 0 0 0 #f9e506;
-    transition: ease-out 0.3s;
-    color: aliceblue;
-
+  font-family: "Fredoka One", cursive;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(166, 187, 117);
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  margin-top: 40px;
+  box-shadow: inset 0 0 0 0 #f9e506;
+  transition: ease-out 0.3s;
+  color: aliceblue;
 }
 
 @keyframes an {
-    from {
-        left: -30px;
-    }
+  from {
+    left: -30px;
+  }
 
-    to {
-        left: 150px;
-    }
-}
-
-#ashana{
-    background-color: #f2dac3;
-    padding-bottom: 100px;
-}
-#pose1{
-    padding-top: 70px;
+  to {
+    left: 150px;
+  }
 }
 
-#pose2{
-    padding-top: 50px;
+#ashana {
+  background-color: #f2dac3;
+  padding-bottom: 100px;
+}
+#pose1 {
+  padding-top: 70px;
 }
 
-#pose3{
-    padding-top: 90px;
-}
-#follow{
-    font-family: 'Salsa', cursive;
-    font-size: 3.5rem;
-    text-align: center;
-    padding-top: 65px;
+#pose2 {
+  padding-top: 50px;
 }
 
-#cobra{
-    width: 400px;
-    float: left;
-    padding-right: 20px;
+#pose3 {
+  padding-top: 90px;
+}
+#follow {
+  font-family: "Salsa", cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 65px;
+}
+
+#cobra {
+  width: 400px;
+  float: left;
+  padding-right: 20px;
 }
 
 #learn1 {
-    font-family: 'Fredoka One', cursive;
-    width: 150px;
-    height: 40px;
-    background-color: rgb(196, 101, 101);
-    border: none;
-    border-radius: 12px;
-    outline: none;
-    margin-top: 40px;
-    box-shadow: inset 0 0 0 0 #f9e506;
-    transition: ease-out 0.3s;
-    color: aliceblue;
-    position: relative;
-    left: 150px;
-    bottom: 30px;
+  font-family: "Fredoka One", cursive;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(196, 101, 101);
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  margin-top: 40px;
+  box-shadow: inset 0 0 0 0 #f9e506;
+  transition: ease-out 0.3s;
+  color: aliceblue;
+  position: relative;
+  left: 150px;
+  bottom: 30px;
 }
 
 #learn1:hover {
-    box-shadow: inset 150px 0 0 0 #f9e506;
-    color: black;
+  box-shadow: inset 150px 0 0 0 #f9e506;
+  color: black;
 }
 
-
-
-#cobtxt{
-    width: 90%;
-    font-family: 'Prompt', sans-serif;
-    padding-top: 10px;
+#cobtxt {
+  width: 90%;
+  font-family: "Prompt", sans-serif;
+  padding-top: 10px;
 }
 
-#homebtn{
-    font-family: 'Rubik', sans-serif;
-    width: 150px;
-    height: 40px;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 12px;
-    outline: none;
-    margin-top: 40px;
-    color: black;
-    position: relative;
-    top: 80px;
+#homebtn {
+  font-family: "Rubik", sans-serif;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  margin-top: 40px;
+  color: black;
+  position: relative;
+  top: 80px;
 }
 
 #homebtn:hover {
-    box-shadow: inset 150px 0 0 0 rgb(196, 101, 101);
-    color: white;
+  box-shadow: inset 150px 0 0 0 rgb(196, 101, 101);
+  color: white;
 }
