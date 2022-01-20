@@ -158,6 +158,60 @@
 
 }
 
+
+/* Food section below*/
+
+#foodsectionpart{
+    background-color: whitesmoke;
+padding-top: 30px;
+padding-left: 25px;
+padding-bottom: 30px;
+}
+
+#fsecimg{
+    height: 500px;
+    width: 500px;
+}
+
+
+#fsec1{
+padding-top: 10px;
+position: relative;
+padding-left:110px;
+
+}
+
+#fsec2 {
+padding-top: 50px;
+position: relative;
+padding-left:110px;
+}
+#fsecbtn {
+
+    width: 150px;
+    height: 40px;
+    background-color: rgb(199, 179, 255);
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    margin-top: 40px;
+    margin-left: 110px;
+    box-shadow: none;
+    transition: ease-out 0.3s;
+
+}
+
+
+#fsecbtn:hover {
+box-shadow: inset 150px 0 0 0 #ff995e;
+}
+#pr {
+    padding-top: 100px;
+}
+
+
+
+
 #supplies {
     padding-top: 80px;
     padding-bottom: 50px;

@@ -1,276 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Co-Winn</title>
-    <link rel="icon" href="images/hazmat.png">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="images/hazmat.png" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- JavaScript Bundle with Popper -->
 
-
-    <script src="https://kit.fontawesome.com/fec895396d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/fec895396d.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- tooltip er animation -->
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- AOS er library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+  </head>
 
-
-
-
-<body>
+  <body>
     <section id="title">
-        <div class="container-fluid">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <!-- navbar brand -->
+          <a href="#" class="navbar-brand" style="font-size: 20px"> Co-Winn</a>
 
-            <nav class="navbar navbar-expand-lg navbar-light">
+          <!-- hamburger menu -->
+          <button
+            class="navbar-toggler me-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navtoggle"
+            aria-controls="navtoggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <!-- navbar brand -->
-                <a href="#" class="navbar-brand" style="font-size:20px;"> Co-Winn</a>
+          <!-- navbar er baaki shob jinish -->
+          <div class="collapse navbar-collapse" id="navtoggle">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Home</a>
+              </li>
 
+              <li class="nav-item" id="lg">
+                <a class="nav-link" href="./Pages/Covid_tracker.html">
+                  Tracker
+                </a>
+              </li>
 
-                <!-- hamburger menu -->
-                <button class="navbar-toggler me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggle"
-                    aria-controls="navtoggle" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+              <li class="nav-item" id="lg">
+                <a class="nav-link" href="./Pages/About.html"> About </a>
+              </li>
 
-                <!-- navbar er baaki shob jinish -->
-                <div class="collapse navbar-collapse" id="navtoggle">
-                    <ul class="navbar-nav ms-auto">
-                        <li class=nav-item>
-                            <a class="nav-link" href="index.html"> Home</a>
-                        </li>
+              <li class="nav-item" id="lg">
+                <a class="nav-link" href="./Pages/yoga.html"> Yoga </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of navbar -->
+        </nav>
 
-                        <li class=nav-item id="lg">
-                            <a class="nav-link" href="./Pages/Covid_tracker.html"> Tracker </a>
-                        </li>
-
-                        <li class=nav-item id="lg">
-                            <a class="nav-link" href="./Pages/About.html"> About </a>
-                        </li>
-
-                        <li class=nav-item id="lg">
-                            <a class="nav-link" href="./Pages/yoga.html"> Yoga </a>
-                        </li>
-
-
-
-                    </ul>
-                </div>
-                <!-- end of navbar -->
-            </nav>
-
-
-
-
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 id="An"> An initiative to help you fight Covid !!</h1>
-                    <div id="dbn">
-                        <button type="button" class="btn btn-dark" style="margin-right: 20px;"><i
-                                class="fab fa-apple"></i>
-                            <p style="display: inline; position: relative; right: 10px;">Download</p>
-                        </button>
-                        <button type="button" class="btn btn-outline-light"><i class="fab fa-google-play"></i>
-                            <p style="display: inline; position: relative; right: 10px;">Download</p>
-                        </button>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-6">
-                    <img src="images/docs.jpg" alt="">
-                </div>
-
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 id="An">An initiative to help you fight Covid !!</h1>
+            <div id="dbn">
+              <button
+                type="button"
+                class="btn btn-dark"
+                style="margin-right: 20px"
+              >
+                <i class="fab fa-apple"></i>
+                <p style="display: inline; position: relative; right: 10px">
+                  Download
+                </p>
+              </button>
+              <button type="button" class="btn btn-outline-light">
+                <i class="fab fa-google-play"></i>
+                <p style="display: inline; position: relative; right: 10px">
+                  Download
+                </p>
+              </button>
             </div>
+          </div>
 
-
-            <form id="loginform">
-                <div style="text-align: center;"><i class="fas fa-user"
-                        style="font-size: 3rem; position: relative; bottom: 80px;"></i>
-                </div>
-
-                <h1
-                    style="text-align: center; position: relative; bottom: 80px; font-family: 'Balsamiq Sans', cursive;">
-                    Login
-                </h1>
-
-                <div class="close">
-                    +
-                </div>
-
-                <div class="mb-3" id="email-div">
-                    <label for="inputemail" class="form-label" id="email-label"
-                        style="font-size: 1.1rem; font-family: sans-serif; font-weight: 500;"><strong>Email
-                            address</strong></label>
-                    <input type="email" class="form-control" id="inputemail" aria-describedby="emailHelp">
-                </div>
-
-                <div class="mb-3" id="pass-div">
-                    <label for="InputPassword" class="form-label" id="pass-label"
-                        style="font-size: 1.1rem; font-family: sans-serif;"><strong>Password</strong></label>
-                    <input type="password" class="form-control" id="InputPassword">
-                </div>
-
-                <div class="mb-3 form-check" id="rem-div">
-                    <label class="form-check-label" for="exampleCheck1"
-                        style="font-size: 1rem; font-family: sans-serif;">Remember me</label>
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                </div>
-
-                <button type="submit" class="btn" id="sbmtbtn"><strong
-                        style="position: relative; bottom: 5px;">Submit</strong>
-                </button>
-
-            </form>
+          <div class="col-lg-6">
+            <img src="images/docs.jpg" alt="" />
+          </div>
         </div>
-    </section>
 
+        <form id="loginform">
+          <div style="text-align: center">
+            <i
+              class="fas fa-user"
+              style="font-size: 3rem; position: relative; bottom: 80px"
+            ></i>
+          </div>
+
+          <h1
+            style="
+              text-align: center;
+              position: relative;
+              bottom: 80px;
+              font-family: 'Balsamiq Sans', cursive;
+            "
+          >
+            Login
+          </h1>
+
+          <div class="close">+</div>
+
+          <div class="mb-3" id="email-div">
+            <label
+              for="inputemail"
+              class="form-label"
+              id="email-label"
+              style="
+                font-size: 1.1rem;
+                font-family: sans-serif;
+                font-weight: 500;
+              "
+              ><strong>Email address</strong></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="inputemail"
+              aria-describedby="emailHelp"
+            />
+          </div>
+
+          <div class="mb-3" id="pass-div">
+            <label
+              for="InputPassword"
+              class="form-label"
+              id="pass-label"
+              style="font-size: 1.1rem; font-family: sans-serif"
+              ><strong>Password</strong></label
+            >
+            <input type="password" class="form-control" id="InputPassword" />
+          </div>
+
+          <div class="mb-3 form-check" id="rem-div">
+            <label
+              class="form-check-label"
+              for="exampleCheck1"
+              style="font-size: 1rem; font-family: sans-serif"
+              >Remember me</label
+            >
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+          </div>
+
+          <button type="submit" class="btn" id="sbmtbtn">
+            <strong style="position: relative; bottom: 5px">Submit</strong>
+          </button>
+        </form>
+      </div>
+    </section>
 
     <section id="yoga">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1100">
-                    <img src="images/yoga.jpg" id="yogaimg" alt="">
-                </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1100">
+            <img src="images/yoga.jpg" id="yogaimg" alt="" />
+          </div>
 
-                <div class="col-lg-6" id="pratice" data-aos="fade-left" data-aos-duration="1200">
-                    <h1 id="boost"> Boost your immunity at home !!</h1>
-                    <h3 id="boost2">Pratice yoga daily. <br> Strengthen your lungs <br> Increase blood flow <br> Be
-                        healthy always.</h3>
-                    <a href="./Pages/yoga.html">
-                        <div class="btn" id="learn_btn" style="text-align: center;">Learn more </div>
-                    </a>
-                </div>
-            </div>
+          <div
+            class="col-lg-6"
+            id="pratice"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <h1 id="boost">Boost your immunity at home !!</h1>
+            <h3 id="boost2">
+              Pratice yoga daily. <br />
+              Strengthen your lungs <br />
+              Increase blood flow <br />
+              Be healthy always.
+            </h3>
+            <a href="./Pages/yoga.html">
+              <div class="btn" id="learn_btn" style="text-align: center">
+                Learn more
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
+
+    <section id="foodsectionpart">
+        <div class="container-fluid" id="dbn">
+
+            <div class="row">
+
+        <div
+            class="col-lg-6"
+            id="pr"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <h1 id="fsec1">Tips for maintaining a healthy diet </h1>
+            <h3 id="fsec2">
+              Eat a variety of foods. <br />
+              Eat plenty of fruit and vegetables,<br />
+              Keep salt intake to less than 5 g per day. <br />
+              Eat moderate amounts of healthier fats and oils.
+            </h3>
+            <a href="#">
+              <div class="btn" id="fsecbtn" style="text-align: center">
+                Learn more
+              </div>
+            </a>
+          </div>
+
+        
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1100">
+                <img src="images/foodsec.png" id="fsecimg" alt="" />
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!------- CSS
+    ------------->
 
     <section id="supplies">
-        <div class="container-fluid" style="text-align: center;">
+      <div class="container-fluid" style="text-align: center">
+        <div id="help+logos" data-aos="fade-up" data-aos-duration="600">
+          <h1 id="logostext">How can we help you today ?</h1>
 
-            <div id="help+logos" data-aos="fade-up" data-aos-duration="600">
-                <h1 id="logostext"> How can we help you today ?</h1>
+          <div id="logos">
+            <button id="o2">
+              <img
+                src="images/oxygen-tank.png"
+                alt=""
+                style="height: 60px; width: 60px; margin-right: 30px"
+                class="ic"
+              />
+            </button>
 
-                <div id="logos">
+            <button id="doc">
+              <img
+                src="images/doctor.png"
+                alt=""
+                style="height: 60px; width: 60px; margin-right: 30px"
+                class="ic"
+              />
+            </button>
 
-                    <button id="o2"><img src="images/oxygen-tank.png" alt=""
-                            style="height: 60px; width: 60px; margin-right: 30px;" class="ic"></button>
+            <button id="beds">
+              <img
+                src="images/bed.png"
+                alt=""
+                style="height: 60px; width: 60px; margin-right: 30px"
+                class="ic"
+              />
+            </button>
 
-                    <button id="doc"><img src="images/doctor.png" alt=""
-                            style="height: 60px; width: 60px; margin-right: 30px;" class="ic"></button>
-
-                    <button id="beds"><img src="images/bed.png" alt=""
-                            style="height: 60px; width: 60px; margin-right: 30px;" class="ic"></button>
-
-                    <button id="food"><img src="images/food.png" alt=""
-                            style="height: 60px; width: 60px; margin-right: 30px;" class="ic"></button>
-                </div>
-
-            </div>
-
+            <button id="food">
+              <img
+                src="images/food.png"
+                alt=""
+                style="height: 60px; width: 60px; margin-right: 30px"
+                class="ic"
+              />
+            </button>
+          </div>
         </div>
-        <!--end of container fluid-->
+      </div>
+      <!--end of container fluid-->
     </section>
 
-
-
     <footer>
-        <div class="content">
-            <div class="top">
-                <div class="logo-details">
-                    <span class="logo_name">Co-Winn</span>
-                </div>
-                <div class="media-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="link-boxes">
-                <ul class="box">
-                    <li class="link_name">Links</li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Get Started</a></li>
-
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Services</li>
-                    <li><a href="#">App Design</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Logo Design</a></li>
-                    <li><a href="#">Banner Design</a></li>
-
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Other services</li>
-                    <li><a href="#">SEO</a></li>
-                    <li><a href="#">Content Marketing</a></li>
-                    <li><a href="#">Prints</a></li>
-                    <li><a href="#">Social Media</a></li>
-
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Contact</li>
-                    <li><a href="#">+91 8879887262</a></li>
-                    <li><a href="#">+91 8879887262</a></li>
-                    <li><a href="#">contact@Co-Winn.com</a></li>
-
-
-                </ul>
-
-
-
-
-            </div>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <span class="logo_name">Co-Winn</span>
+          </div>
+          <div class="media-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
         </div>
-        <div class="bottom-details">
-            <div class="bottom_text">
-                <span class="copyright_text">Copyright © 2021 <a href="#">Co-Winn.</a></span>
-                <span class="policy_terms">
-                    <a href="#">Privacy policy</a>
-
-                </span>
-            </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">Links</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Get Started</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Services</li>
+            <li><a href="#">App Design</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Logo Design</a></li>
+            <li><a href="#">Banner Design</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Other services</li>
+            <li><a href="#">SEO</a></li>
+            <li><a href="#">Content Marketing</a></li>
+            <li><a href="#">Prints</a></li>
+            <li><a href="#">Social Media</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Contact</li>
+            <li><a href="#">+91 8879887262</a></li>
+            <li><a href="#">+91 8879887262</a></li>
+            <li><a href="#">contact@Co-Winn.com</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"
+            >Copyright © 2021 <a href="#">Co-Winn.</a></span
+          >
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+          </span>
+        </div>
+      </div>
     </footer>
-
-
 
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-        </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <script src="style.js"></script>
-
-</body>
-
+  </body>
 </html>
